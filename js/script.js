@@ -21,11 +21,11 @@ $(".to_do_list").append(template);
 // per cancellare gli elementi
 // // lo lego alla to do al click di delete
 $(".to_do_list").on("click", ".delete",function(){
-  // di questo, risali al parent e rimuovi 
+  // di questo, risali al parent e rimuovi
   $(this).parent().remove();
 }
 );
-
+// aggiungi una label e input in html
 
 
 

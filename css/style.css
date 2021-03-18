@@ -3,6 +3,19 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
+.container{
+  width: 80%;
+  margin: auto;
+  background-color: lightgreen;
+  padding: 20px 0 20px 20px;
+}
+label{
+  padding-left: 25px;
+  font-size: 20px;
+}
+li{
+  margin-bottom: 10px;
+}
 .template{
   display: none;
 }
