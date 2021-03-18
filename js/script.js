@@ -6,7 +6,7 @@ var list = [
   "Pagare le bollette",
   "Innaffiare giardino",
   "Lavare l'auto",
-  "Fare la lavtrice",
+  "Fare la lavatrice",
   "Lavare le tende",
 ];
 
