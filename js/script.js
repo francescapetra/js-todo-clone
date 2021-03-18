@@ -22,7 +22,7 @@ $(".to_do_list").append(template);
 
 // creo un click generico in previsioni del push successivo da input
 // per cancellare gli elementi
-// // lo lego alla to do al click di delete
+// // lo lego alla to do in appoggio ma il click è di delete
 $(".to_do_list").on("click", ".delete",function(){
   // di questo, risali al parent e rimuovi
   $(this).parent().remove();
