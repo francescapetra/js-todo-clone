@@ -4,17 +4,25 @@ body{
   box-sizing: border-box;
 }
 .container{
-  width: 80%;
+  width: 40%;
   margin: auto;
   background-color: lightgreen;
   padding: 20px 0 20px 20px;
+  border-radius: 20px;
+  margin-top: 50px;
 }
 label{
   padding-left: 25px;
   font-size: 20px;
+  color: blue;
+  font-weight: bold;
+  vertical-align: bottom;
 }
 li{
   margin-bottom: 10px;
+}
+span{
+  color: red;
 }
 .template{
   display: none;

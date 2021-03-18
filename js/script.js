@@ -2,9 +2,12 @@
 
 // creo l'array con un lista già esistente
 var list = [
-  "Fare spesa",
+  "Andare al supermercato",
+  "Pagare le bollette",
   "Innaffiare giardino",
   "Lavare l'auto",
+  "Fare la lavtrice",
+  "Lavare le tende",
 ];
 
 //faccio ciclare i miei elementi
@@ -25,7 +28,30 @@ $(".to_do_list").on("click", ".delete",function(){
   $(this).parent().remove();
 }
 );
+
 // aggiungi una label e input in html
+// a questo aggiungiamo l'evento della tastiera
+$("#addlist").keydown(function(e){
+  // con il log ti identifichi il tasto
+  console.log(event.which);
+  // se all'interno dell'input il tasto 13 viene premuto
+  // mi restituisci il valore
+  if (e.which == 13) {
+    var task = $(this).val();
+  //se il campo è diverso da vuoto
+      if (task != "") {
+  //mi cloni il template
+        var cloneTemplate = $(".template ul li").clone();
+  // aggiungo le info ricevute al template
+        cloneTemplate.prepend(task);
+  // aggiungo come su il template alla lista con il suo valore
+        $(".to_do_list").append(cloneTemplate);
+        $(this).val("");
+      }
+  }
+}
+);
+
 
 
 
